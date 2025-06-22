@@ -1,36 +1,32 @@
 # Optuna Hyperparameter Tuning Configuration for LightGBM
 
-# Number of trials for the optimization process
-n_trials: 3
+n_trials: 50
 
-# LightGBM Hyperparameters search space
-# We use a multi-class objective function.
-# class_weight='balanced' will be set in the code to handle imbalance.
 params:
   n_estimators:
-    low: 1582
-    high: 1582
+    low: 200
+    high: 2000
   learning_rate:
-    low: 0.07712252711113013
-    high: 0.07712252711113013
-    log: false
+    low: 0.01
+    high: 0.2
+    log: true
   num_leaves:
-    low: 67
-    high: 67
+    low: 20
+    high: 150
   max_depth:
-    low: 18
-    high: 18
+    low: 5
+    high: 20
   reg_alpha: 
-    low: 0.0000012782186865649148
-    high: 0.0000012782186865649148
-    log: false
+    low: 0.00000001
+    high: 10.0
+    log: true
   reg_lambda: 
-    low: 0.000022415949404234833
-    high: 0.000022415949404234833
-    log: false
+    low: 0.00000001
+    high: 10.0
+    log: true
   colsample_bytree:
-    low: 0.6072975975499578
-    high: 0.6072975975499578
+    low: 0.6
+    high: 1.0
   subsample:
-    low: 0.8360710769835231
-    high: 0.8360710769835231
+    low: 0.6
+    high: 1.0
