@@ -98,3 +98,8 @@ plt.ylabel('Principal Component 2', fontsize=12)
 cbar = plt.colorbar(scatter, ticks=range(optimal_k))
 cbar.set_label('Cluster Label', fontsize=12)
 plt.savefig('debate_clusters.png', dpi=300, bbox_inches='tight')
+
+
+######################################### TASK 4 #############################################
+
+
